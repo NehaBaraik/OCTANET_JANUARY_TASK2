@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: "Trirong", serif; */
+}
+body{
+    background: url("img.jpg");
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    margin: 50px 0px 30px 0px;
+    color: rgb(4, 17, 250);
+    
+}
+
+.container{
+    background-color: white;
+    /* color: white; */
+    min-height: 40vh;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+   
+}
+.task{
+    height: 100px;
+}
+.display{
+    min-height: 10vh;
+    width: 350px;
+}
+.item{
+    height: 35px;
+    width:300px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid red;
+    font-size: 25px;
+}
+.add{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4e4cff;
+    color: white;
+}
+.displayitem{
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 0 5px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(240, 230, 230);
+}
+.taskcheck{
+    height: 25px;
+    width: 25px;
+}
+.delete{
+    height: 38px;
+    width: 38px;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.taskcheck:checked+.tasktext {
+    text-decoration: line-through;
+}
+h2{
+    color: red;
+    opacity: 0;
+}
+button{
+    cursor: pointer;
+}
